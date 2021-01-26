@@ -9,7 +9,7 @@ var getUserRepos = function(user) {
 
     // make a request to the url
     fetch(apiUrl)
-        .then(function (response) {
+        .then(function(response) {
             // request was successful
             if (response.ok) {
                 response.json().then(function(data) {
@@ -22,7 +22,7 @@ var getUserRepos = function(user) {
         })
         .catch(function(error) {
             alert("Unable to connect to GitHub");
-        })
+    });
 };
 
 var formSubmitHandler = function(event) {
